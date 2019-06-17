@@ -1,0 +1,19 @@
+<form [formGroup]="formGroup">
+  <div class="example-container">
+    <div>
+      <label for="">Primero</label><br>
+      <mat-form-field>
+        <input matInput placeholder="Input" formControlName="campo1">
+      </mat-form-field>
+    </div>
+    <div>
+      <label for="">Segundo</label><br>
+      <mat-form-field>
+        <input matInput placeholder="Input" formControlName="campo2">
+      </mat-form-field>
+    </div>
+  </div>
+  <button mat-raised-button class="btn-login" [disabled]="formGroup.invalid" (click)="validacion()">
+    Entrar
+  </button>
+</form>
